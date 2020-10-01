@@ -32,12 +32,12 @@ myApp.geometry('450x450+200+200')
 
 myApp.title('Myapp')
 
-mLabel = Label(myApp,text='my label').pack()
-
-mButton = Button(myApp,text ='OK', command = mHello).pack()
+mLabel = Label(myApp,text='My Label').pack()
 
 #set the ment variable from the text entry box
 mEntry = Entry(myApp,textvariable=ment).pack()
+
+mButton = Button(myApp,text ='Click Here!', command = mHello).pack()
 
 #create the menubar
 menubar = Menu(myApp)
@@ -50,6 +50,7 @@ filemenu.add_command(label="New", command=myNew)
 filemenu.add_command(label="Open", command=myOpen)
 filemenu.add_command(label="Save As...")
 filemenu.add_command(label="Close", command=mQuit)
+
 
 menubar.add_cascade(label="File",menu=filemenu)
 
