@@ -32,7 +32,7 @@ myApp.geometry('450x450+200+200')
 
 myApp.title('Myapp')
 
-mLabel = Label(myApp,text='My Label').pack()
+mLabel = Label(myApp,text='Enter your name here').pack()
 
 #set the ment variable from the text entry box
 mEntry = Entry(myApp,textvariable=ment).pack()
